@@ -9,7 +9,7 @@ type Props = {
   checkValue: any,
 }
 
-const Play: React.FC<Props> = (props) => {
+const Type: React.FC<Props> = (props) => {
   return (
     <div css={[wrapper, background]}>
       <input css={hideForm} autoFocus //<- Focus on rendering.
@@ -74,4 +74,4 @@ const wrapper = css`
     text-align: center;
 `
 
-export default Play;
+export default Type;

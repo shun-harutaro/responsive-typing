@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import {css, keyframes} from '@emotion/react'
 import Vocab from '../vocab.json'
-import Play from './play'
+import Type from './type'
 import { format } from 'path';
 
 type Props = {
@@ -10,7 +10,7 @@ type Props = {
 
 }
 
-const Game: React.FC<Props> = (props) => {
+const Funcs: React.FC<Props> = (props) => {
   const [param, setParam] = useState(
     {
       vocab: Vocab[0].th,
@@ -119,7 +119,7 @@ const Game: React.FC<Props> = (props) => {
 
   return (
     <div css={[body, background]}>
-      <Play {...data} />
+      <Type {...data} />
     </div>
   )
 }
@@ -142,4 +142,4 @@ let background = css`
   background: lightgray;
 `
 
-export default Game;
+export default Funcs;
