@@ -1,4 +1,3 @@
-/** @jsxImportSource @emotion/react */
 import React, { useState } from 'react';
 import {css, keyframes} from '@emotion/react'
 import Vocab from '../vocab.json'

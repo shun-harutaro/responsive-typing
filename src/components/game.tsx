@@ -45,6 +45,7 @@ const Game:React.FC = () => {
   } else if (window === 'result') {
     return (<Result data={datas} resetGame={resetGame}/>)
   }
+  return (<p></p>)
 }
 
 export default Game;
