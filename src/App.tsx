@@ -2,7 +2,6 @@ import React from 'react';
 import Game from './components/game';
 import ButtonAppBar from './components/ButtonAppBar';
 import { GlobalStyles } from '@mui/material';
-import { css } from '@emotion/react';
 
 function App() {
   return (

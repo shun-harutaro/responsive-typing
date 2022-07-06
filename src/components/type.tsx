@@ -1,5 +1,6 @@
+/** @jsx jsx */
 import React, { useEffect, useRef } from 'react';
-import { css } from '@emotion/react';
+import { jsx, css } from '@emotion/react';
 
 type Props = {
   position: number,
