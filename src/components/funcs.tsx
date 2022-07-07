@@ -111,10 +111,10 @@ const Funcs: React.FC<Props> = (props) => {
   }
 
   const data = {
-    vocab: "abc",
-    position: 8,
-    translation: "abc",
-    checkValue: "",
+    vocab: param.vocab,
+    position: param.position,
+    translation: param.translation,
+    checkValue: checkValue,
   };
 
   return (
