@@ -10,7 +10,7 @@ type Props = {
 }
 
 const Type: React.FC<Props> = (props) => {
-  const keepFocus = useRef<HTMLInputElement>(null);
+  const keepFocus = useRef<any>(null);
   return (
     <div css={[wrapper, background]}>
       <input css={hideForm} autoFocus //<- Focus on rendering.
@@ -21,7 +21,7 @@ const Type: React.FC<Props> = (props) => {
         ref={keepFocus}
         onChange={props.checkValue}
         onBlur={() => {
-          keepFocus.current?.focus();
+          keepFocus.current.focus();
         }}
       />
       <div css={textbox}>
