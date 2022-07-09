@@ -1,6 +1,6 @@
-/** @jsxImportSource @emotion/react */
+/** @jsx jsx */
 import React, { useState } from 'react';
-import {css, keyframes} from '@emotion/react'
+import {jsx, css, keyframes} from '@emotion/react'
 import Vocab from '../vocab.json'
 import Type from './type'
 import { format } from 'path';
@@ -111,10 +111,10 @@ const Funcs: React.FC<Props> = (props) => {
   }
 
   const data = {
-    vocab: "abc",
-    position: 8,
-    translation: "abc",
-    checkValue: "",
+    vocab: param.vocab,
+    position: param.position,
+    translation: param.translation,
+    checkValue: checkValue,
   };
 
   return (

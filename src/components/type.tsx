@@ -1,6 +1,6 @@
-/** @jsxImportSource @emotion/react */
-import React from 'react';
-import { css } from '@emotion/react';
+/** @jsx jsx */
+import React, { useEffect, useRef } from 'react';
+import { jsx, css } from '@emotion/react';
 
 type Props = {
   position: number,
@@ -10,6 +10,7 @@ type Props = {
 }
 
 const Type: React.FC<Props> = (props) => {
+  const keepFocus = useRef<any>(null);
   return (
     <div css={[wrapper, background]}>
       <input css={hideForm} autoFocus //<- Focus on rendering.
@@ -20,7 +21,7 @@ const Type: React.FC<Props> = (props) => {
         ref={keepFocus}
         onChange={props.checkValue}
         onBlur={() => {
-          this.keepFocus.current.focus();
+          keepFocus.current.focus();
         }}
       />
       <div css={textbox}>

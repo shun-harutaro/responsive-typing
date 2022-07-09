@@ -1,6 +1,6 @@
-/** @jsxImportSource @emotion/react */
+/** @jsx jsx */
 import React from 'react';
-import {css} from '@emotion/react'
+import {jsx, css} from '@emotion/react'
 import  Button  from '@mui/material/Button';
 import BasicTable from './BasicTable';
 import Grid from '@mui/material/Grid';
